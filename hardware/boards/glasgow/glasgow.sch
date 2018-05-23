@@ -29,24 +29,24 @@ $EndComp
 $Comp
 L Connector:USB_B_Micro J1
 U 1 1 5ACA0820
-P 1050 4150
-F 0 "J1" H 1050 4500 50  0000 C CNN
-F 1 "USB_B_Micro" V 800 4150 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1200 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/276/0473460001_IO_CONNECTORS-229243.pdf" H 1200 4100 50  0001 C CNN
-F 4 "538-47346-0001" H 1050 4150 50  0001 C CNN "Mouser_PN"
-	1    1050 4150
+P 750 4150
+F 0 "J1" H 750 4500 50  0000 C CNN
+F 1 "USB_B_Micro" V 500 4150 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 900 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0473460001_IO_CONNECTORS-229243.pdf" H 900 4100 50  0001 C CNN
+F 4 "538-47346-0001" H 750 4150 50  0001 C CNN "Mouser_PN"
+	1    750  4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5ACA09A2
-P 1050 4600
-F 0 "#PWR09" H 1050 4350 50  0001 C CNN
-F 1 "GND" H 1200 4550 50  0000 C CNN
-F 2 "" H 1050 4600 50  0001 C CNN
-F 3 "" H 1050 4600 50  0001 C CNN
-	1    1050 4600
+P 750 4600
+F 0 "#PWR09" H 750 4350 50  0001 C CNN
+F 1 "GND" H 900 4550 50  0000 C CNN
+F 2 "" H 750 4600 50  0001 C CNN
+F 3 "" H 750 4600 50  0001 C CNN
+	1    750  4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -74,16 +74,16 @@ Wire Wire Line
 Wire Wire Line
 	2900 6150 2900 6200
 Wire Wire Line
-	1050 4550 1050 4600
+	750  4550 750  4600
 $Comp
 L power:+5V #PWR07
 U 1 1 5ACA0A58
-P 950 3550
-F 0 "#PWR07" H 950 3400 50  0001 C CNN
-F 1 "+5V" H 800 3600 50  0000 C CNN
-F 2 "" H 950 3550 50  0001 C CNN
-F 3 "" H 950 3550 50  0001 C CNN
-	1    950  3550
+P 950 1700
+F 0 "#PWR07" H 950 1550 50  0001 C CNN
+F 1 "+5V" H 800 1750 50  0000 C CNN
+F 2 "" H 950 1700 50  0001 C CNN
+F 3 "" H 950 1700 50  0001 C CNN
+	1    950  1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -181,14 +181,6 @@ Connection ~ 1950 4750
 Wire Wire Line
 	1950 4750 2000 4750
 Wire Wire Line
-	2100 4250 2100 4500
-Wire Wire Line
-	2100 4500 2200 4500
-Wire Wire Line
-	2200 4400 2150 4400
-Wire Wire Line
-	2150 4400 2150 4150
-Wire Wire Line
 	1650 5200 1900 5200
 Wire Wire Line
 	1650 5300 2000 5300
@@ -215,36 +207,34 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 5ACCF0F2
-P 1150 5050
-F 0 "R3" H 1220 5096 50  0000 L CNN
-F 1 "1M" H 1220 5005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.99x1.00mm_HandSolder" V 1080 5050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_9-1314892.pdf" H 1150 5050 50  0001 C CNN
-F 4 "603-RC0603FR-071ML" H 1150 5050 50  0001 C CNN "Mouser_PN"
-	1    1150 5050
+P 1000 5050
+F 0 "R3" H 1070 5096 50  0000 L CNN
+F 1 "1M" H 1070 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.99x1.00mm_HandSolder" V 930 5050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_9-1314892.pdf" H 1000 5050 50  0001 C CNN
+F 4 "603-RC0603FR-071ML" H 1000 5050 50  0001 C CNN "Mouser_PN"
+	1    1000 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 4900 1150 4850
+	1000 4900 1000 4850
 Wire Wire Line
-	800  4850 800  4900
+	650  4850 650  4900
 Wire Wire Line
-	950  4550 950  4850
+	650  4550 650  4850
 Wire Wire Line
-	950  4850 800  4850
+	650  5200 650  5250
 Wire Wire Line
-	800  5200 800  5250
-Wire Wire Line
-	1150 5250 1150 5200
+	1000 5250 1000 5200
 $Comp
 L power:GND #PWR015
 U 1 1 5ACD15FA
-P 800 5300
-F 0 "#PWR015" H 800 5050 50  0001 C CNN
-F 1 "GND" H 805 5127 50  0000 C CNN
-F 2 "" H 800 5300 50  0001 C CNN
-F 3 "" H 800 5300 50  0001 C CNN
-	1    800  5300
+P 650 5300
+F 0 "#PWR015" H 650 5050 50  0001 C CNN
+F 1 "GND" H 655 5127 50  0000 C CNN
+F 2 "" H 650 5300 50  0001 C CNN
+F 3 "" H 650 5300 50  0001 C CNN
+	1    650  5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -423,13 +413,13 @@ $EndComp
 $Comp
 L Device:C C13
 U 1 1 5ACF7322
-P 800 5050
-F 0 "C13" H 915 5096 50  0000 L CNN
-F 1 "u1" H 915 5005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad0.99x1.00mm_HandSolder" H 838 4900 50  0001 C CNN
-F 3 "https://www.mouser.hk/datasheet/2/396/mlcc02_e-1307760.pdf" H 800 5050 50  0001 C CNN
-F 4 "963-TMK107BJ104KAHT" H 800 5050 50  0001 C CNN "Mouser_PN"
-	1    800  5050
+P 650 5050
+F 0 "C13" H 765 5096 50  0000 L CNN
+F 1 "u1" H 765 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad0.99x1.00mm_HandSolder" H 688 4900 50  0001 C CNN
+F 3 "https://www.mouser.hk/datasheet/2/396/mlcc02_e-1307760.pdf" H 650 5050 50  0001 C CNN
+F 4 "963-TMK107BJ104KAHT" H 650 5050 50  0001 C CNN "Mouser_PN"
+	1    650  5050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -480,10 +470,6 @@ Wire Wire Line
 	1750 3800 2150 3800
 Text Label 1750 3800 0    50   ~ 0
 ~CY_RESET
-Wire Wire Line
-	1350 4150 2150 4150
-Wire Wire Line
-	1350 4250 2100 4250
 $Comp
 L Device:R R2
 U 1 1 5AD252CA
@@ -751,7 +737,7 @@ $EndComp
 Wire Wire Line
 	4800 6750 4800 6800
 Connection ~ 4800 6800
-NoConn ~ 1350 4350
+NoConn ~ 1050 4350
 $Comp
 L Mechanical:Mounting_Hole_PAD MK1
 U 1 1 5AD602A3
@@ -827,10 +813,10 @@ Wire Wire Line
 	900  7200 900  7250
 Connection ~ 900  7200
 Wire Wire Line
-	800  5250 1150 5250
+	650  5250 1000 5250
 Wire Wire Line
-	800  5250 800  5300
-Connection ~ 800  5250
+	650  5250 650  5300
+Connection ~ 650  5250
 $Comp
 L Device:C C10
 U 1 1 5AD97C38
@@ -853,11 +839,11 @@ Wire Wire Line
 Wire Wire Line
 	3950 1600 3650 1600
 Connection ~ 3650 1600
-Text Label 1000 4850 0    50   ~ 0
+Text Label 700  4850 0    50   ~ 0
 SHLD
-Text Label 1450 4150 0    50   ~ 0
+Text Label 1300 4150 0    50   ~ 0
 USB_P
-Text Label 1450 4250 0    50   ~ 0
+Text Label 1300 4250 0    50   ~ 0
 USB_N
 Text Label 1900 2700 0    50   ~ 0
 XTALOUT
@@ -1191,9 +1177,6 @@ Entry Wire Line
 	6250 5550 6350 5650
 Wire Wire Line
 	5900 3900 6250 3900
-Wire Wire Line
-	950  4850 1150 4850
-Connection ~ 950  4850
 Text Label 6350 2500 2    50   ~ 0
 ~FPGA_RESET
 Text Label 6350 2600 2    50   ~ 0
@@ -2117,28 +2100,10 @@ Text Label 8400 4050 0    50   ~ 0
 SDA
 Text Label 8400 4150 0    50   ~ 0
 SCL
-$Comp
-L Device:Fuse F1
-U 1 1 5AD2FAC6
-P 1200 3650
-F 0 "F1" V 1003 3650 50  0000 C CNN
-F 1 "500m" V 1094 3650 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric_Pad0.99x1.00mm_HandSolder" H 1200 3650 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/643/ds-CP-c2q-series-1313118.pdf" H 1200 3650 50  0001 C CNN
-F 4 "530-C2Q500" H 1200 3650 50  0001 C CNN "Mouser_PN"
-	1    1200 3650
-	0    1    1    0   
-$EndComp
-Text Label 1400 3900 1    50   ~ 0
+Text Label 1050 3650 1    50   ~ 0
 VUSB
 Wire Wire Line
-	1400 3650 1350 3650
-Wire Wire Line
-	1400 3650 1400 3950
-Wire Wire Line
-	1050 3650 950  3650
-Wire Wire Line
-	950  3650 950  3550
+	950  1800 950  1700
 Wire Wire Line
 	3600 2300 3950 2300
 $Comp
@@ -2238,17 +2203,17 @@ Wire Wire Line
 $Comp
 L Connector:Test_Point TP1
 U 1 1 5ADB3D1E
-P 900 3650
-F 0 "TP1" V 800 3700 50  0000 L CNN
-F 1 "5V" V 1004 3724 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1100 3650 50  0001 C CNN
-F 3 "~" H 1100 3650 50  0001 C CNN
-	1    900  3650
+P 900 1800
+F 0 "TP1" V 800 1850 50  0000 L CNN
+F 1 "5V" V 1004 1874 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1100 1800 50  0001 C CNN
+F 3 "~" H 1100 1800 50  0001 C CNN
+	1    900  1800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	900  3650 950  3650
-Connection ~ 950  3650
+	900  1800 950  1800
+Connection ~ 950  1800
 $Comp
 L Connector:Test_Point TP2
 U 1 1 5AE0012C
@@ -2291,8 +2256,6 @@ Text Label 8400 3650 0    50   ~ 0
 ~OEQ
 Wire Wire Line
 	10300 5750 10800 5750
-Wire Wire Line
-	1350 3950 1400 3950
 Wire Wire Line
 	3600 3300 4000 3300
 Wire Wire Line
@@ -2942,6 +2905,54 @@ Wire Wire Line
 	1800 2700 1800 2800
 Wire Wire Line
 	1800 3100 1800 3200
+Text Notes 5950 6700 0    50   ~ 0
+FX2_MEM
+Text Notes 3900 6700 0    50   ~ 0
+ICE_MEM
+$Comp
+L Glasgow:TPD3S014 U15
+U 1 1 5B079D5D
+P 1050 2100
+F 0 "U15" V 1400 2050 50  0000 R CNN
+F 1 "TPD3S014" V 1300 2050 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 1700 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd3s014.pdf" H 2000 1750 50  0001 C CNN
+	1    1050 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 650  4850
+Wire Wire Line
+	650  4850 1000 4850
+Wire Wire Line
+	2200 4500 2100 4500
+Wire Wire Line
+	2250 4400 2200 4400
+Connection ~ 2200 4400
+Wire Wire Line
+	2200 4400 2150 4400
+Wire Wire Line
+	950  1800 1050 1800
+Wire Wire Line
+	1050 3950 1050 2400
+Wire Wire Line
+	1150 2400 1050 2400
+Connection ~ 1050 2400
+Wire Wire Line
+	2150 4150 2150 4400
+Wire Wire Line
+	1050 4150 2150 4150
+Wire Wire Line
+	2100 4250 2100 4500
+Wire Wire Line
+	1050 4250 2100 4250
+Text Label 500  2000 0    50   ~ 0
+USB_P
+Text Label 500  2200 0    50   ~ 0
+USB_N
+Wire Wire Line
+	750  2000 500  2000
+Wire Wire Line
+	500  2200 750  2200
 Wire Bus Line
 	4050 5850 6350 5850
 Wire Bus Line
@@ -2952,8 +2963,15 @@ Wire Bus Line
 	6350 2900 6350 5850
 Wire Bus Line
 	4050 2400 4050 5850
-Text Notes 5950 6700 0    50   ~ 0
-FX2_MEM
-Text Notes 3900 6700 0    50   ~ 0
-ICE_MEM
+$Comp
+L power:GND #PWR043
+U 1 1 5B5B10F9
+P 1350 2100
+F 0 "#PWR043" H 1350 1850 50  0001 C CNN
+F 1 "GND" H 1355 1927 50  0000 C CNN
+F 2 "" H 1350 2100 50  0001 C CNN
+F 3 "" H 1350 2100 50  0001 C CNN
+	1    1350 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
